@@ -1,119 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luau do Corpo | Estética e Bem-Estar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-        body { font-family: 'Poppins', sans-serif; }
-        .bg-gold { background-color: #D4AF37; }
-        .text-gold { color: #D4AF37; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luau do Corpo: tratamentos de estética, massagens e bem-estar em Palmas.">
+  <title>Luau do Corpo | Estética & Bem-estar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-slate-50 text-gray-800">
-
-    <!-- Navbar -->
-    <nav class="flex justify-between items-center p-5 bg-white shadow-sm sticky top-0 z-50">
-        <h1 class="text-xl font-bold text-gold">Luau do Corpo</h1>
-        <a href="https://wa.me/5500000000000" class="bg-gold text-white px-4 py-2 rounded-full text-sm font-semibold">Agendar</a>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="inicio">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Luau do Corpo — início">Luau <span>do Corpo</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="menu-principal">
+        <a href="#sobre">O espaço</a>
+        <a href="#servicos">Tratamentos</a>
+        <a href="#galeria">Galeria</a>
+        <a class="button button--small" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Agendar horário</a>
+      </div>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="relative h-[80vh] flex items-center justify-center text-center text-white px-6">
-        <!-- SUBSTITUA A URL ABAIXO PELA IMAGEM PRINCIPAL DO LOCAL -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1544161515-62a36216690e?auto=format&fit=crop&q=80&w=1000" alt="Ambiente Luau do Corpo" class="w-full h-full object-cover">
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__image" role="img" aria-label="Ambiente relaxante do Luau do Corpo"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light">Estética • Relaxamento • Autocuidado</p>
+        <h1 id="hero-title">Seu momento de<br><em>florescer.</em></h1>
+        <p class="hero__copy">Tratamentos pensados para renovar sua energia, revelar sua beleza e fazer você se sentir ainda melhor.</p>
+        <div class="hero__actions">
+          <a class="button" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="text-link text-link--light" href="#servicos">Conheça os tratamentos <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="absolute inset-0 z-[1] bg-gradient-to-b from-black/80 via-black/70 to-black/80" aria-hidden="true"></div>
-        
-        <div class="relative z-10 max-w-2xl">
-            <h2 class="text-4xl md:text-6xl font-semibold leading-tight mb-5">Recupere seu bem-estar e sua autoestima</h2>
-            <p class="text-lg md:text-xl font-medium leading-relaxed mb-8">Experiências exclusivas de estética e relaxamento para transformar o seu dia.</p>
-             <a href="https://wa.me/5500000000000" class="bg-[#7A5700] hover:bg-[#5F4300] text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all focus:outline-none focus:ring-4 focus:ring-white/70">Agendar Sessão Agora <i class="fab fa-whatsapp ml-2"></i></a>
-        </div>
+      </div>
+      <div class="hero__stamp" aria-hidden="true"><span>Desde</span><strong>2026</strong><span>com carinho</span></div>
     </section>
 
-    <!-- Serviços -->
-    <section class="py-16 px-6 max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-            <h3 class="text-3xl font-bold text-gray-900 mb-2">Nossos Serviços</h3>
-            <div class="w-20 h-1 bg-gold mx-auto"></div>
+    <section class="intro section" id="sobre">
+      <div class="container intro__grid">
+        <div class="intro__image-wrap">
+          <!-- Troque esta URL pela foto do seu espaço quando desejar. -->
+          <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1000&q=85" alt="Detalhes de um ambiente acolhedor de spa" loading="lazy">
+          <div class="intro__label">Cuidado que<br>acolhe você</div>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Serviço 1 -->
-            <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-gold">
-                <div class="text-gold text-3xl mb-4"><i class="fas fa-spa"></i></div>
-                <h4 class="text-xl font-bold mb-2">Massagem Relaxante</h4>
-                <p class="text-gray-600 mb-4">Alivie o estresse do dia a dia com técnicas que promovem o relaxamento profundo.</p>
-            </div>
-            <!-- Serviço 2 -->
-            <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-gold">
-                <div class="text-gold text-3xl mb-4"><i class="fas fa-magic"></i></div>
-                <h4 class="text-xl font-bold mb-2">Limpeza de Pele</h4>
-                <p class="text-gray-600 mb-4">Remoção de impurezas e revitalização facial para uma pele radiante e saudável.</p>
-            </div>
-            <!-- Serviço 3 -->
-            <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-gold">
-                <div class="text-gold text-3xl mb-4"><i class="fas fa-leaf"></i></div>
-                <h4 class="text-xl font-bold mb-2">Drenagem Linfática</h4>
-                <p class="text-gray-600 mb-4">Redução de inchaços e eliminação de toxinas para um corpo mais leve.</p>
-            </div>
+        <div class="intro__content">
+          <p class="eyebrow">Conheça o Luau</p>
+          <h2>Mais que estética:<br>uma pausa para você.</h2>
+          <p>O Luau do Corpo é um espaço criado para desacelerar. Cada detalhe foi pensado para que seu atendimento seja leve, exclusivo e verdadeiramente seu.</p>
+          <p>Aqui, combinamos técnicas cuidadosas e atendimento próximo para transformar sua rotina em uma experiência de bem-estar.</p>
+          <div class="intro__numbers" aria-label="Diferenciais do Luau do Corpo">
+            <div><strong>100%</strong><span>atendimento<br>personalizado</span></div>
+            <div><strong>+3</strong><span>formas de<br>se cuidar</span></div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Galeria / Sobre -->
-    <section class="py-16 bg-white px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-                <!-- SUBSTITUA A URL ABAIXO PELA FOTO DO LOCAL -->
-                <img src="https://images.unsplash.com/photo-1519823770390-a7336756275f?auto=format&fit=crop&q=80&w=1000" alt="Espaço Luau do Corpo" class="rounded-3xl shadow-2xl w-full h-auto">
-            </div>
-            <div>
-                <h3 class="text-3xl font-bold text-gray-900 mb-4">Um refúgio de paz em Palmas</h3>
-                <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                    No Luau do Corpo, acreditamos que a beleza começa com o equilíbrio entre corpo e mente. Nosso espaço foi planejado para oferecer o máximo de conforto e discrição, garantindo que cada cliente tenha um momento único de autocuidado.
-                </p>
-                <ul class="space-y-3 mb-8">
-                    <li class="flex items-center text-gray-700"><i class="fas fa-check text-gold mr-2"></i> Profissionais Qualificados</li>
-                    <li class="flex items-center text-gray-700"><i class="fas fa-check text-gold mr-2"></i> Ambiente Higienizado e Acolhedor</li>
-                    <li class="flex items-center text-gray-700"><i class="fas fa-check text-gold mr-2"></i> Atendimento Personalizado</li>
-                </ul>
-                 <a href="https://wa.me/5500000000000" class="bg-gold text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">Conhecer Espaço</a>
-            </div>
+    <section class="services section section--sand" id="servicos" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Tratamentos</p><h2 id="services-title">Escolha o seu<br>ritual de cuidado.</h2></div>
+          <p>Do relaxamento à renovação, encontre um momento feito para as necessidades do seu corpo.</p>
         </div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-card__number">01</span><div class="service-card__icon">✦</div><h3>Massagem relaxante</h3><p>Movimentos que aliviam tensões e convidam corpo e mente a desacelerar.</p><a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="Agendar massagem relaxante">Agendar <span>→</span></a></article>
+          <article class="service-card service-card--featured"><span class="service-card__number">02</span><div class="service-card__icon">❋</div><h3>Limpeza de pele</h3><p>Um cuidado facial completo para revelar uma pele mais luminosa e revitalizada.</p><a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="Agendar limpeza de pele">Agendar <span>→</span></a></article>
+          <article class="service-card"><span class="service-card__number">03</span><div class="service-card__icon">◌</div><h3>Drenagem linfática</h3><p>Uma técnica suave para favorecer a leveza e o equilíbrio do seu corpo.</p><a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="Agendar drenagem linfática">Agendar <span>→</span></a></article>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-6 text-center">
-        <h2 class="text-2xl font-bold text-gold mb-4">Luau do Corpo</h2>
-        <p class="opacity-70 mb-6">Palmas, PR | Especialistas em Bem-Estar</p>
-        <div class="flex justify-center gap-6 mb-8">
-            <a href="#" class="text-2xl hover:text-gold transition-colors"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-2xl hover:text-gold transition-colors"><i class="fab fa-facebook"></i></a>
-             <a href="https://wa.me/5500000000000" class="text-2xl hover:text-gold transition-colors"><i class="fab fa-whatsapp"></i></a>
+    <section class="gallery section" id="galeria" aria-labelledby="gallery-title">
+      <div class="container gallery__heading"><div><p class="eyebrow">Nosso espaço</p><h2 id="gallery-title">Um olhar sobre<br>o Luau do Corpo.</h2></div><p>Deslize para conhecer o ambiente. Você pode substituir cada imagem pelas fotos do seu espaço.</p></div>
+      <div class="carousel container" aria-roledescription="carrossel" aria-label="Galeria de imagens do espaço">
+        <div class="carousel__viewport">
+          <div class="carousel__track">
+            <!-- Substitua os links abaixo pelas suas fotos. -->
+            <figure class="carousel__slide"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=85" alt="Sala de spa com maca de massagem" loading="lazy"><figcaption>Ambiente preparado para o seu relaxamento.</figcaption></figure>
+            <figure class="carousel__slide"><img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1400&q=85" alt="Produtos e pedras para massagem" loading="lazy"><figcaption>Detalhes que tornam a experiência especial.</figcaption></figure>
+            <figure class="carousel__slide"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1400&q=85" alt="Pessoa em momento de autocuidado" loading="lazy"><figcaption>Seu bem-estar é o nosso ritual.</figcaption></figure>
+          </div>
         </div>
-        <p class="text-sm opacity-50">&copy; 2026 Luau do Corpo. Todos os direitos reservados.</p>
-    </footer>
+        <div class="carousel__controls"><div class="carousel__dots" role="tablist" aria-label="Selecionar imagem"></div><div class="carousel__arrows"><button class="carousel__button carousel__button--prev" aria-label="Imagem anterior">←</button><button class="carousel__button carousel__button--next" aria-label="Próxima imagem">→</button></div></div>
+      </div>
+    </section>
 
-    <!-- Botão Flutuante WhatsApp -->
-     <a href="https://wa.me/5500000000000" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600 transition-all z-50">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <section class="cta"><div class="container cta__content"><p class="eyebrow eyebrow--light">Reserve seu momento</p><h2>Você merece se sentir<br><em>incrível.</em></h2><p>Fale com a gente, tire suas dúvidas e encontre o melhor horário para o seu cuidado.</p><a class="button button--light" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Quero agendar agora <span aria-hidden="true">↗</span></a></div></section>
+  </main>
 
-    <script>
-        // Efeito simples de scroll suave para links internos
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+  <footer class="site-footer"><div class="container footer__grid"><div><a class="brand" href="#inicio">Luau <span>do Corpo</span></a><p>Estética, bem-estar e autocuidado<br>em um só lugar.</p></div><div><p class="footer__title">Navegue</p><a href="#sobre">O espaço</a><a href="#servicos">Tratamentos</a><a href="#galeria">Galeria</a></div><div><p class="footer__title">Atendimento</p><a href="https://wa.me/5500000000000" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:contato@luaudocorpo.com.br">contato@luaudocorpo.com.br</a><span>Palmas, PR</span></div></div><div class="container footer__bottom"><span>© <span id="year"></span> Luau do Corpo</span><span>Feito para o seu bem-estar</span></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">◔<span>Agende agora</span></a>
+  <script src="script.js"></script>
 </body>
 </html>
